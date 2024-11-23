@@ -182,4 +182,6 @@
 
 			});
 
+	// i have no idea what i am doing or why i am doing it but i want to clean this java script up to make it look nicer
+
 })(jQuery);

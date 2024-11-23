@@ -25,7 +25,7 @@
 
 	// Forms.
 		var $form = $('form');
-
+		
 		// Auto-resizing textareas.
 			$form.find('textarea').each(function() {
 
@@ -174,5 +174,6 @@
 						$menu._hide();
 
 			});
+		//yes lets do this
 
 })(jQuery);

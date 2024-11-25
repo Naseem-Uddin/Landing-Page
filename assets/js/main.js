@@ -10,14 +10,7 @@
 		$body = $('body');
 
 	// Breakpoints.
-		breakpoints({
-			xlarge:   [ '1281px',  '1680px' ],
-			large:    [ '981px',   '1280px' ],
-			medium:   [ '737px',   '980px'  ],
-			small:    [ '481px',   '736px'  ],
-			xsmall:   [ '361px',   '480px'  ],
-			xxsmall:  [ null,      '360px'  ]
-		});
+		breakpoints({xlarge:   [ '1281px',  '1680px' ], large:    [ '981px',   '1280px' ], medium:   [ '737px',   '980px'  ], small:    [ '481px',   '736px'  ], xsmall:   [ '361px',   '480px'  ], xxsmall:  [ null,      '360px'  ]});
 
 	// Play initial animations on page load.
 		$window.on('load', function() {
@@ -181,5 +174,7 @@
 						$menu._hide();
 
 			});
+
+	// i have no idea what i am doing or why i am doing it but i want to clean this java script up to make it look nicer
 
 })(jQuery);

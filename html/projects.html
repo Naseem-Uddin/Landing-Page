@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Personal Portfolio</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/animations.css">
+</head>
+
+<body>
+
+    <!-- Hamburger icon -->
+    <div class="hamburger" onclick="toggleNav(this)">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    
+    <!-- Navigation menu -->
+    <nav id="navbar" class="hidden">
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="experience.html">Experience</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="activities.html">Activities</a></li>
+            <li><a href="volunteering.html">Volunteering</a></li>
+            <li><a href="resume.html">Resume</a></li>
+        </ul>
+    </nav>
+
+    <div class="main-content">
+        <!-- Hero Section -->
+        <section class="hero-section fade-in">
+            <div class="hero-content">
+                <h1 class="hero-title gradient-text">My Projects</h1>
+                <p class="hero-subtitle">Showcasing my work and technical expertise</p>
+            </div>
+        </section>
+
+        <!-- Featured Projects -->
+        <section class="content-section fade-in">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card hover-lift">
+                    <div class="project-image">
+                        <img src="../images/me2.png" alt="E-commerce Platform">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="btn">Live Demo</a>
+                                <a href="#" class="btn btn-secondary">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>E-commerce Platform</h3>
+                        <p>A full-stack e-commerce solution with payment processing, inventory management, and admin dashboard.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">Stripe</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card hover-lift">
+                    <div class="project-image">
+                        <img src="../images/me3.png" alt="AI Chat Application">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="btn">Live Demo</a>
+                                <a href="#" class="btn btn-secondary">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>AI Chat Application</h3>
+                        <p>An intelligent chatbot powered by machine learning, capable of understanding context and providing helpful responses.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">TensorFlow</span>
+                            <span class="tech-tag">Flask</span>
+                            <span class="tech-tag">WebSocket</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card hover-lift">
+                    <div class="project-image">
+                        <img src="../images/me4.jpg" alt="Task Management App">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="btn">Live Demo</a>
+                                <a href="#" class="btn btn-secondary">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Task Management App</h3>
+                        <p>A collaborative task management application with real-time updates, team collaboration, and progress tracking.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Vue.js</span>
+                            <span class="tech-tag">Firebase</span>
+                            <span class="tech-tag">Vuex</span>
+                            <span class="tech-tag">PWA</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Web Applications -->
+        <section class="content-section slide-in-left">
+            <h2 class="section-title">Web Applications</h2>
+            <div class="project-category-grid">
+                <div class="project-item">
+                    <h3>Weather Dashboard</h3>
+                    <p>Real-time weather application with location-based forecasts and interactive maps.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">Weather API</span>
+                        <span class="tech-tag">Chart.js</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="btn">View Project</a>
+                    </div>
+                </div>
+
+                <div class="project-item">
+                    <h3>Recipe Finder</h3>
+                    <p>Recipe discovery app with search, filtering, and personalized recommendations.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Spoonacular API</span>
+                        <span class="tech-tag">CSS Grid</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="btn">View Project</a>
+                    </div>
+                </div>
+
+                <div class="project-item">
+                    <h3>Portfolio Website</h3>
+                    <p>Responsive personal portfolio with modern design and smooth animations.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML5</span>
+                        <span class="tech-tag">CSS3</span>
+                        <span class="tech-tag">JavaScript</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="btn">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mobile Applications -->
+        <section class="content-section slide-in-right">
+            <h2 class="section-title">Mobile Applications</h2>
+            <div class="project-category-grid">
+                <div class="project-item">
+                    <h3>Fitness Tracker</h3>
+                    <p>Cross-platform mobile app for tracking workouts, nutrition, and fitness goals.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">React Native</span>
+                        <span class="tech-tag">Redux</span>
+                        <span class="tech-tag">AsyncStorage</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="btn">View Project</a>
+                    </div>
+                </div>
+
+                <div class="project-item">
+                    <h3>Language Learning App</h3>
+                    <p>Interactive language learning application with gamification elements.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Flutter</span>
+                        <span class="tech-tag">Dart</span>
+                        <span class="tech-tag">SQLite</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="btn">View Project</a>
+                    </div>
+                </div>
+
+                <div class="project-item">
+                    <h3>Event Organizer</h3>
+                    <p>Event management app for creating, organizing, and attending events.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Ionic</span>
+                        <span class="tech-tag">Angular</span>
+                        <span class="tech-tag">Firebase</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="btn">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Data Science & AI -->
+        <section class="content-section fade-in">
+            <h2 class="section-title">Data Science & AI Projects</h2>
+            <div class="project-category-grid">
+                <div class="project-item">
+                    <h3>Sentiment Analysis Tool</h3>
+                    <p>Machine learning model for analyzing sentiment in social media posts and reviews.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">NLTK</span>
+                        <span class="tech-tag">Scikit-learn</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="btn">View Project</a>
+                    </div>
+                </div>
+
+                <div class="project-item">
+                    <h3>Stock Price Predictor</h3>
+                    <p>LSTM neural network for predicting stock prices based on historical data.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">TensorFlow</span>
+                        <span class="tech-tag">Pandas</span>
+                        <span class="tech-tag">Matplotlib</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="btn">View Project</a>
+                    </div>
+                </div>
+
+                <div class="project-item">
+                    <h3>Image Classification</h3>
+                    <p>CNN model for classifying images into different categories with high accuracy.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">PyTorch</span>
+                        <span class="tech-tag">OpenCV</span>
+                        <span class="tech-tag">NumPy</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="btn">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Open Source Contributions -->
+        <section class="content-section slide-in-left">
+            <h2 class="section-title">Open Source Contributions</h2>
+            <div class="opensource-grid">
+                <div class="opensource-item">
+                    <h3>React Component Library</h3>
+                    <p>Contributed reusable components and improved documentation for a popular React library.</p>
+                    <div class="contribution-stats">
+                        <span>15+ PRs</span>
+                        <span>500+ Stars</span>
+                    </div>
+                </div>
+                <div class="opensource-item">
+                    <h3>Python Data Tools</h3>
+                    <p>Enhanced data processing utilities and added new features for data analysis workflows.</p>
+                    <div class="contribution-stats">
+                        <span>8+ PRs</span>
+                        <span>200+ Downloads</span>
+                    </div>
+                </div>
+                <div class="opensource-item">
+                    <h3>Documentation Improvements</h3>
+                    <p>Improved documentation and tutorials for various open-source projects.</p>
+                    <div class="contribution-stats">
+                        <span>20+ PRs</span>
+                        <span>1000+ Views</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project Statistics -->
+        <section class="content-section slide-in-right">
+            <h2 class="section-title">Project Statistics</h2>
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number counter" data-target="25">0</div>
+                    <p>Projects Completed</p>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number counter" data-target="15">0</div>
+                    <p>Technologies Used</p>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number counter" data-target="1000">0</div>
+                    <p>GitHub Stars</p>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number counter" data-target="50">0</div>
+                    <p>Contributions</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="content-section fade-in">
+            <h2 class="section-title">Interested in Collaboration?</h2>
+            <p>I'm always excited to work on new projects and collaborate with other developers. Whether you have an idea for a project or want to contribute to existing work, let's create something amazing together!</p>
+            <div class="cta-buttons">
+                <a href="experience.html" class="btn">View My Experience</a>
+                <a href="about.html" class="btn btn-secondary">Get in Touch</a>
+            </div>
+        </section>
+    </div>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/animations.js"></script>
+</body>
+</html>

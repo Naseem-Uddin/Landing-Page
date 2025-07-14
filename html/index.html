@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome - Personal Portfolio</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/animations.css">
+</head>
+
+<body>
+
+    <!-- Hamburger icon -->
+    <div class="hamburger" onclick="toggleNav(this)">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    
+    <!-- Navigation menu -->
+    <nav id="navbar" class="hidden">
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="experience.html">Experience</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="activities.html">Activities</a></li>
+            <li><a href="volunteering.html">Volunteering</a></li>
+            <li><a href="resume.html">Resume</a></li>
+        </ul>
+    </nav>
+
+    <div class="main-content">
+        <!-- Hero Section -->
+        <section class="hero-section fade-in">
+            <div class="hero-content">
+                <h1 class="hero-title gradient-text">Welcome to My Portfolio</h1>
+                <p class="hero-subtitle typewriter" data-text="Passionate about technology, innovation, and making a difference in the world.">
+                    Passionate about technology, innovation, and making a difference in the world.
+                </p>
+                <div class="hero-buttons">
+                    <a href="about.html" class="btn">Learn More About Me</a>
+                    <a href="projects.html" class="btn btn-secondary">View My Work</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Image Carousel Section -->
+        <section class="image-carousel scale-in">
+            <h2 class="section-title">A Glimpse Into My World</h2>
+            <div class="carousel">
+                <img src="../images/me1.JPG" class="slide center" alt="Professional headshot">
+                <img src="../images/me2.png" class="slide left" alt="Working on projects">
+                <img src="../images/me3.png" class="slide right" alt="Team collaboration">
+                <img src="../images/me4.jpg" class="slide hidden" alt="Volunteering activities">
+            </div>
+            <p class="carousel-caption">Click on the side images to navigate through my journey</p>
+        </section>
+
+        <!-- Quick Stats Section -->
+        <section class="content-section fade-in">
+            <h2 class="section-title">Quick Overview</h2>
+            <div class="card-grid stagger-children">
+                <div class="card hover-lift">
+                    <h3>Experience</h3>
+                    <p>Years of professional experience in technology and innovation</p>
+                    <div class="counter" data-target="5">0</div>
+                    <span>Years</span>
+                </div>
+                <div class="card hover-lift">
+                    <h3>Projects</h3>
+                    <p>Successfully completed projects across various domains</p>
+                    <div class="counter" data-target="25">0</div>
+                    <span>Projects</span>
+                </div>
+                <div class="card hover-lift">
+                    <h3>Volunteering</h3>
+                    <p>Dedicated hours to community service and social impact</p>
+                    <div class="counter" data-target="500">0</div>
+                    <span>Hours</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Skills Section -->
+        <section class="content-section slide-in-left">
+            <h2 class="section-title">Core Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <h4>Technical Skills</h4>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 90%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <h4>Leadership</h4>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 85%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <h4>Communication</h4>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 95%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <h4>Problem Solving</h4>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 88%"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action Section -->
+        <section class="content-section slide-in-right">
+            <h2 class="section-title">Let's Connect</h2>
+            <p>I'm always interested in new opportunities, collaborations, and interesting projects. Whether you have a question or just want to say hi, feel free to reach out!</p>
+            <div class="cta-buttons">
+                <a href="about.html" class="btn">Get to Know Me Better</a>
+                <a href="resume.html" class="btn btn-secondary">Download Resume</a>
+            </div>
+        </section>
+    </div>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/animations.js"></script>
+</body>
+</html>

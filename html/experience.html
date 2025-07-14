@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experience - Personal Portfolio</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/animations.css">
+</head>
+
+<body>
+
+    <!-- Hamburger icon -->
+    <div class="hamburger" onclick="toggleNav(this)">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    
+    <!-- Navigation menu -->
+    <nav id="navbar">
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="experience.html">Experience</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="activities.html">Activities</a></li>
+            <li><a href="volunteering.html">Volunteering</a></li>
+            <li><a href="resume.html">Resume</a></li>
+        </ul>
+    </nav>
+
+    <div class="main-content">
+        <!-- Hero Section -->
+        <section class="hero-section fade-in">
+            <div class="hero-content">
+                <h1 class="hero-title gradient-text">Professional Experience</h1>
+                <p class="hero-subtitle">My journey through technology and innovation</p>
+            </div>
+        </section>
+
+        <!-- Work Experience Timeline -->
+        <section class="content-section fade-in">
+            <h2 class="section-title">Work Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Senior Software Engineer</h3>
+                        <p class="timeline-company">Tech Innovations Inc.</p>
+                        <p class="timeline-date">2023 - Present</p>
+                        <ul>
+                            <li>Led development of cloud-native applications using modern technologies</li>
+                            <li>Mentored junior developers and conducted code reviews</li>
+                            <li>Collaborated with cross-functional teams to deliver high-quality solutions</li>
+                            <li>Implemented CI/CD pipelines and DevOps best practices</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Software Developer</h3>
+                        <p class="timeline-company">Digital Solutions Corp.</p>
+                        <p class="timeline-date">2021 - 2023</p>
+                        <ul>
+                            <li>Developed full-stack web applications using React and Node.js</li>
+                            <li>Optimized database queries and improved application performance</li>
+                            <li>Participated in agile development processes and sprint planning</li>
+                            <li>Contributed to open-source projects and technical documentation</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Junior Developer Intern</h3>
+                        <p class="timeline-company">StartupXYZ</p>
+                        <p class="timeline-date">2020 - 2021</p>
+                        <ul>
+                            <li>Assisted in developing mobile applications using React Native</li>
+                            <li>Conducted user testing and gathered feedback for product improvements</li>
+                            <li>Learned industry best practices and modern development workflows</li>
+                            <li>Contributed to team meetings and project planning sessions</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Skills -->
+        <section class="content-section slide-in-left">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3>Programming Languages</h3>
+                    <div class="skill-item">
+                        <span>JavaScript/TypeScript</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 95%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>Python</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>Java</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Frontend Technologies</h3>
+                    <div class="skill-item">
+                        <span>React.js</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 92%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>Vue.js</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>HTML/CSS</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 95%"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Backend & Databases</h3>
+                    <div class="skill-item">
+                        <span>Node.js</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 88%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>MongoDB</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>PostgreSQL</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 82%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications & Achievements -->
+        <section class="content-section slide-in-right">
+            <h2 class="section-title">Certifications & Achievements</h2>
+            <div class="certifications-grid">
+                <div class="certification-card hover-lift">
+                    <h3>AWS Certified Developer</h3>
+                    <p>Amazon Web Services</p>
+                    <span class="cert-date">2023</span>
+                </div>
+                <div class="certification-card hover-lift">
+                    <h3>Google Cloud Professional</h3>
+                    <p>Google Cloud Platform</p>
+                    <span class="cert-date">2022</span>
+                </div>
+                <div class="certification-card hover-lift">
+                    <h3>Microsoft Azure Developer</h3>
+                    <p>Microsoft</p>
+                    <span class="cert-date">2022</span>
+                </div>
+                <div class="certification-card hover-lift">
+                    <h3>Best Innovation Award</h3>
+                    <p>Tech Conference 2023</p>
+                    <span class="cert-date">2023</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Leadership & Management -->
+        <section class="content-section fade-in">
+            <h2 class="section-title">Leadership & Management Experience</h2>
+            <div class="leadership-grid">
+                <div class="leadership-item">
+                    <h3>Team Lead</h3>
+                    <p>Led a team of 5 developers in delivering a major client project, ensuring on-time delivery and high quality standards.</p>
+                </div>
+                <div class="leadership-item">
+                    <h3>Mentor</h3>
+                    <p>Mentored 10+ junior developers, providing guidance on best practices, code reviews, and career development.</p>
+                </div>
+                <div class="leadership-item">
+                    <h3>Project Manager</h3>
+                    <p>Managed multiple concurrent projects, coordinating with stakeholders and ensuring successful project delivery.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Industry Experience -->
+        <section class="content-section slide-in-left">
+            <h2 class="section-title">Industry Experience</h2>
+            <div class="industry-grid">
+                <div class="industry-card">
+                    <h3>E-commerce</h3>
+                    <p>Built scalable e-commerce platforms handling thousands of transactions daily</p>
+                </div>
+                <div class="industry-card">
+                    <h3>Healthcare</h3>
+                    <p>Developed secure healthcare applications with HIPAA compliance</p>
+                </div>
+                <div class="industry-card">
+                    <h3>FinTech</h3>
+                    <p>Created financial technology solutions for payment processing and analytics</p>
+                </div>
+                <div class="industry-card">
+                    <h3>Education</h3>
+                    <p>Built learning management systems and educational technology platforms</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="content-section slide-in-right">
+            <h2 class="section-title">Ready to Collaborate?</h2>
+            <p>I'm always looking for new challenges and opportunities to grow. Whether you have a project in mind or want to discuss potential collaborations, I'd love to hear from you!</p>
+            <div class="cta-buttons">
+                <a href="projects.html" class="btn">View My Projects</a>
+                <a href="resume.html" class="btn btn-secondary">Download Resume</a>
+            </div>
+        </section>
+    </div>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/animations.js"></script>
+</body>
+</html>

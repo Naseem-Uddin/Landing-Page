@@ -1,17 +1,14 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume - Personal Portfolio</title>
+    <link rel="icon" type="image/png" href="../images/logos/site_icon.png">
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/animations.css">
 </head>
-
 <body>
-
     <!-- Hamburger icon -->
     <div class="hamburger" onclick="toggleNav(this)">
         <span></span>
@@ -19,7 +16,6 @@
         <span></span>
     </div>
 
-    
     <!-- Navigation menu -->
     <nav id="navbar">
         <ul class="nav-links">
@@ -27,367 +23,18 @@
             <li><a href="about.html">About Me</a></li>
             <li><a href="experience.html">Experience</a></li>
             <li><a href="projects.html">Projects</a></li>
-            <li><a href="activities.html">Activities</a></li>
-            <li><a href="volunteering.html">Volunteering</a></li>
             <li><a href="resume.html">Resume</a></li>
         </ul>
     </nav>
 
     <div class="main-content">
-        <!-- Hero Section -->
-        <section class="hero-section fade-in">
-            <div class="hero-content">
-                <h1 class="hero-title gradient-text">Resume & CV</h1>
-                <p class="hero-subtitle">Professional experience, skills, and achievements</p>
-                <div class="resume-actions">
-                    <a href="#" class="btn" onclick="downloadResume()">Download PDF</a>
-                    <a href="#" class="btn btn-secondary" onclick="printResume()">Print Resume</a>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact Information -->
-        <section class="content-section fade-in">
-            <h2 class="section-title">Contact Information</h2>
-            <div class="contact-grid">
-                <div class="contact-item">
-                    <h3>Email</h3>
-                    <p>your.email@example.com</p>
-                </div>
-                <div class="contact-item">
-                    <h3>Phone</h3>
-                    <p>+1 (555) 123-4567</p>
-                </div>
-                <div class="contact-item">
-                    <h3>Location</h3>
-                    <p>San Francisco, CA</p>
-                </div>
-                <div class="contact-item">
-                    <h3>LinkedIn</h3>
-                    <p>linkedin.com/in/yourprofile</p>
-                </div>
-                <div class="contact-item">
-                    <h3>GitHub</h3>
-                    <p>github.com/yourusername</p>
-                </div>
-                <div class="contact-item">
-                    <h3>Portfolio</h3>
-                    <p>yourportfolio.com</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Professional Summary -->
-        <section class="content-section slide-in-left">
-            <h2 class="section-title">Professional Summary</h2>
-            <div class="summary-content">
-                <p>Experienced software engineer with 5+ years of expertise in full-stack development, cloud technologies, and emerging technologies. Proven track record of delivering scalable solutions, leading development teams, and driving innovation in fast-paced environments.</p>
-                <p>Passionate about using technology to solve real-world problems and create positive social impact. Strong advocate for diversity in tech and committed to mentoring the next generation of developers.</p>
-            </div>
-        </section>
-
-        <!-- Work Experience -->
-        <section class="content-section slide-in-right">
-            <h2 class="section-title">Professional Experience</h2>
-            <div class="experience-timeline">
-                <div class="experience-item">
-                    <div class="experience-header">
-                        <h3>Senior Software Engineer</h3>
-                        <span class="company">Tech Innovations Inc.</span>
-                        <span class="duration">2023 - Present</span>
-                    </div>
-                    <ul class="experience-details">
-                        <li>Led development of cloud-native applications serving 100,000+ users</li>
-                        <li>Mentored 5 junior developers and conducted code reviews</li>
-                        <li>Implemented CI/CD pipelines reducing deployment time by 60%</li>
-                        <li>Collaborated with cross-functional teams to deliver high-quality solutions</li>
-                        <li>Architected microservices infrastructure using AWS and Docker</li>
-                    </ul>
-                    <div class="tech-stack">
-                        <span class="tech-tag">React</span>
-                        <span class="tech-tag">Node.js</span>
-                        <span class="tech-tag">AWS</span>
-                        <span class="tech-tag">Docker</span>
-                        <span class="tech-tag">MongoDB</span>
-                    </div>
-                </div>
-
-                <div class="experience-item">
-                    <div class="experience-header">
-                        <h3>Software Developer</h3>
-                        <span class="company">Digital Solutions Corp.</span>
-                        <span class="duration">2021 - 2023</span>
-                    </div>
-                    <ul class="experience-details">
-                        <li>Developed full-stack web applications using modern technologies</li>
-                        <li>Optimized database queries improving performance by 40%</li>
-                        <li>Participated in agile development processes and sprint planning</li>
-                        <li>Contributed to open-source projects and technical documentation</li>
-                        <li>Implemented responsive design principles and accessibility standards</li>
-                    </ul>
-                    <div class="tech-stack">
-                        <span class="tech-tag">JavaScript</span>
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">PostgreSQL</span>
-                        <span class="tech-tag">Vue.js</span>
-                        <span class="tech-tag">REST APIs</span>
-                    </div>
-                </div>
-
-                <div class="experience-item">
-                    <div class="experience-header">
-                        <h3>Junior Developer Intern</h3>
-                        <span class="company">StartupXYZ</span>
-                        <span class="duration">2020 - 2021</span>
-                    </div>
-                    <ul class="experience-details">
-                        <li>Assisted in developing mobile applications using React Native</li>
-                        <li>Conducted user testing and gathered feedback for product improvements</li>
-                        <li>Learned industry best practices and modern development workflows</li>
-                        <li>Contributed to team meetings and project planning sessions</li>
-                        <li>Fixed bugs and implemented minor features</li>
-                    </ul>
-                    <div class="tech-stack">
-                        <span class="tech-tag">React Native</span>
-                        <span class="tech-tag">Firebase</span>
-                        <span class="tech-tag">Git</span>
-                        <span class="tech-tag">Agile</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Education -->
-        <section class="content-section fade-in">
-            <h2 class="section-title">Education</h2>
-            <div class="education-grid">
-                <div class="education-item">
-                    <h3>Bachelor of Science in Computer Science</h3>
-                    <p class="institution">University of Technology</p>
-                    <p class="graduation">2020 - 2024</p>
-                    <p class="gpa">GPA: 3.8/4.0</p>
-                    <ul class="education-details">
-                        <li>Graduated with honors</li>
-                        <li>Dean's List: All semesters</li>
-                        <li>Computer Science Society President</li>
-                        <li>Relevant coursework: Data Structures, Algorithms, Software Engineering, Database Systems, Machine Learning</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <!-- Technical Skills -->
-        <section class="content-section slide-in-left">
-            <h2 class="section-title">Technical Skills</h2>
-            <div class="skills-container">
-                <div class="skill-category">
-                    <h3>Programming Languages</h3>
-                    <div class="skill-item">
-                        <span>JavaScript/TypeScript</span>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 95%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <span>Python</span>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 90%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <span>Java</span>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 85%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <span>C++</span>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 80%"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <h3>Frontend Technologies</h3>
-                    <div class="skill-item">
-                        <span>React.js</span>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 92%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <span>Vue.js</span>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 80%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <span>HTML/CSS</span>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 95%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <span>SASS/SCSS</span>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 88%"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <h3>Backend & Databases</h3>
-                    <div class="skill-item">
-                        <span>Node.js</span>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 88%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <span>MongoDB</span>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 85%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <span>PostgreSQL</span>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 82%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <span>Redis</span>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 75%"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <h3>Cloud & DevOps</h3>
-                    <div class="skill-item">
-                        <span>AWS</span>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 85%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <span>Docker</span>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 80%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <span>Kubernetes</span>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 70%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <span>CI/CD</span>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 85%"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Certifications -->
-        <section class="content-section slide-in-right">
-            <h2 class="section-title">Certifications</h2>
-            <div class="certifications-grid">
-                <div class="certification-item">
-                    <h3>AWS Certified Developer Associate</h3>
-                    <p class="cert-org">Amazon Web Services</p>
-                    <p class="cert-date">2023</p>
-                </div>
-                <div class="certification-item">
-                    <h3>Google Cloud Professional Developer</h3>
-                    <p class="cert-org">Google Cloud Platform</p>
-                    <p class="cert-date">2022</p>
-                </div>
-                <div class="certification-item">
-                    <h3>Microsoft Azure Developer Associate</h3>
-                    <p class="cert-org">Microsoft</p>
-                    <p class="cert-date">2022</p>
-                </div>
-                <div class="certification-item">
-                    <h3>Certified Scrum Master (CSM)</h3>
-                    <p class="cert-org">Scrum Alliance</p>
-                    <p class="cert-date">2021</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Awards & Recognition -->
-        <section class="content-section fade-in">
-            <h2 class="section-title">Awards & Recognition</h2>
-            <div class="awards-grid">
-                <div class="award-item">
-                    <h3>Employee of the Year</h3>
-                    <p class="award-org">Tech Innovations Inc.</p>
-                    <p class="award-year">2023</p>
-                </div>
-                <div class="award-item">
-                    <h3>Best Innovation Award</h3>
-                    <p class="award-org">Tech Conference 2023</p>
-                    <p class="award-year">2023</p>
-                </div>
-                <div class="award-item">
-                    <h3>Dean's List</h3>
-                    <p class="award-org">University of Technology</p>
-                    <p class="award-year">2020-2024</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Languages -->
-        <section class="content-section slide-in-left">
-            <h2 class="section-title">Languages</h2>
-            <div class="languages-grid">
-                <div class="language-item">
-                    <h3>English</h3>
-                    <p>Native/Fluent</p>
-                </div>
-                <div class="language-item">
-                    <h3>Spanish</h3>
-                    <p>Fluent</p>
-                </div>
-                <div class="language-item">
-                    <h3>Mandarin Chinese</h3>
-                    <p>Intermediate</p>
-                </div>
-                <div class="language-item">
-                    <h3>French</h3>
-                    <p>Basic</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Call to Action -->
-        <section class="content-section slide-in-right">
-            <h2 class="section-title">Let's Connect</h2>
-            <p>I'm always interested in new opportunities and collaborations. Whether you have a project in mind, want to discuss potential roles, or simply want to connect professionally, I'd love to hear from you!</p>
-            <div class="cta-buttons">
-                <a href="experience.html" class="btn">View Detailed Experience</a>
-                <a href="projects.html" class="btn btn-secondary">See My Projects</a>
-            </div>
+        <h3 class="section-title fade-in">Resume</h3>
+        <section class="content-section">
+            <embed src="../images/personal_images/Naseem_Uddin_Resume.pdf" type="application/pdf" width="100%" height="800px" />
         </section>
     </div>
 
     <script src="../js/main.js"></script>
     <script src="../js/animations.js"></script>
-    <script>
-        function downloadResume() {
-            // This would typically trigger a PDF download
-            alert('Resume download functionality would be implemented here');
-        }
-
-        function printResume() {
-            window.print();
-        }
-    </script>
 </body>
 </html>

@@ -91,13 +91,19 @@ function initBackToTop() {
 function initSkillBars() {
   const skillBars = document.querySelectorAll('.skill-progress');
   
+  skillBars.forEach(bar => {
+    const width = bar.getAttribute('data-width') || bar.style.width;
+    bar.style.width = '0';
+    bar.dataset.width = width;
+  });
+  
   const skillObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        entry.target.classList.add('animate');
+        entry.target.style.width = entry.target.dataset.width;
       }
     });
-  }, { threshold: 0.5 });
+  }, { threshold: 0.1 });
 
   skillBars.forEach(bar => skillObserver.observe(bar));
 }
@@ -167,7 +173,7 @@ function initParallax() {
 document.addEventListener('DOMContentLoaded', initParallax);
 
 // Typewriter effect
-function typeWriter(element, text, speed = 100) {
+function typeWriter(element, text, speed = 30) {
   let i = 0;
   element.innerHTML = '';
   

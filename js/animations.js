@@ -3,76 +3,28 @@ document.addEventListener('DOMContentLoaded', () => {
     if (!carousel) return;
     
     const images = Array.from(carousel.children);
-    let currentIndex = 1; // middle image is center by default
-    let isAnimating = false;
+    let currentIndex = 0;
 
-    function updateClasses() {
-        if (isAnimating) return;
-        
+    function updateSlides() {
         images.forEach((img, i) => {
-            img.className = 'slide'; // reset class
-
             if (i === currentIndex) {
-                img.classList.add('center');
-            } 
-            else if (i === (currentIndex - 1 + images.length) % images.length) {
-                img.classList.add('left');
-            } 
-            else if (i === (currentIndex + 1) % images.length) {
-                img.classList.add('right');
-            }
-            else {
-                img.classList.add('hidden');
+                img.classList.add('active');
+            } else {
+                img.classList.remove('active');
             }
         });
     }
 
-    function rotate(direction) {
-        if (isAnimating) return;
-        
-        isAnimating = true;
-        
-        if (direction === 'left') {
-            currentIndex = (currentIndex + 1) % images.length;
-        } 
-        else {
-            currentIndex = (currentIndex - 1 + images.length) % images.length;
-        }
-
-        updateClasses();
-        
-        // Reset animation flag after transition
-        setTimeout(() => {
-            isAnimating = false;
-        }, 600);
+    function nextSlide() {
+        currentIndex = (currentIndex + 1) % images.length;
+        updateSlides();
     }
-
-    // Click handlers for carousel navigation
-    carousel.addEventListener('click', (e) => {
-        if (e.target.classList.contains('left')) {
-            rotate('right');
-        } 
-        else if (e.target.classList.contains('right')) {
-            rotate('left');
-        }
-    });
-
-    // Keyboard navigation
-    document.addEventListener('keydown', (e) => {
-        if (e.key === 'ArrowLeft') {
-            rotate('right');
-        } else if (e.key === 'ArrowRight') {
-            rotate('left');
-        }
-    });
 
     // Auto-rotate carousel
     let autoRotateInterval;
     
     function startAutoRotate() {
-        autoRotateInterval = setInterval(() => {
-            rotate('left');
-        }, 5000); // Rotate every 5 seconds
+        autoRotateInterval = setInterval(nextSlide, 4000); // Change slide every 4 seconds
     }
     
     function stopAutoRotate() {
@@ -86,13 +38,12 @@ document.addEventListener('DOMContentLoaded', () => {
     carousel.addEventListener('mouseenter', stopAutoRotate);
     carousel.addEventListener('mouseleave', startAutoRotate);
 
-    // Initialize positions
-    updateClasses();
+    // Initialize first slide
+    updateSlides();
     
     // Add entrance animation
     setTimeout(() => {
         carousel.style.opacity = '1';
-        carousel.style.transform = 'translateY(0)';
     }, 100);
 });
 
